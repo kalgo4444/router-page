@@ -13,6 +13,14 @@ const Posts = () => {
 			.catch(err => setErr(err))
 			.finally(() => setLoading(false));
 	}, []);
+
+	if (err) {
+		return (
+			<div className='container mx-auto px-5 min-h-[100vh] flex items-center justify-center text-red-500 text-9xl'>
+				Error!
+			</div>
+		);
+	}
 	return (
 		<section>
 			<div className='container mx-auto px-5 min-h-[100vh]'>
@@ -157,7 +165,7 @@ const Posts = () => {
 						date?.map(item => (
 							<li
 								key={item.id}
-								className='bg-white text-black border-2 border-border-color p-3 rounded-2xl'
+								className='bg-white text-black border-2 border-border-color p-3 rounded-2xl box-shadow'
 							>
 								<h3 className='text-3xl font-semibold'>Post</h3>
 								<p className='text-lg font-bold mt-3'>Title: {item.title}</p>

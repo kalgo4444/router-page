@@ -13,6 +13,13 @@ const Users = () => {
 			.finally(() => setLoading(false));
 	}, []);
 
+	if (err) {
+		return (
+			<div className='container mx-auto px-5 min-h-[100vh] flex items-center justify-center text-red-500 text-9xl'>
+				Error!
+			</div>
+		);
+	}
 	const img =
 		"https://images.unsplash.com/photo-1542156822-6924d1a71ace?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60";
 	return (
@@ -111,19 +118,16 @@ const Users = () => {
 						date?.map(item => (
 							<li
 								key={item.id}
-								className='overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800'
+								className='overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800 box-shadow'
 							>
 								<img src={img} loading='lazy' className='object-cover w-full h-56' alt='card img' />
-								<div class='py-5 text-center text-white'>
-									<a
-										href='#'
-										class='block text-xl font-bold text-gray-800 dark:text-white'
-										tabindex='0'
-										role='link'
-									>
+								<div className='py-5 text-center text-white'>
+									<p className='block text-xl font-bold text-gray-800 dark:text-white'>
 										{item.name}
-									</a>
-									<span class='text-sm text-gray-700 dark:text-gray-200'>{item.company.name}</span>
+									</p>
+									<span className='text-sm text-gray-700 dark:text-gray-200'>
+										{item.company.name}
+									</span>
 								</div>
 							</li>
 						))

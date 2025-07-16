@@ -12,6 +12,14 @@ const Comments = () => {
 			.catch(err => setErr(err))
 			.finally(() => setLoading(false));
 	}, []);
+
+	if (err) {
+		return (
+			<div className='container mx-auto px-5 min-h-[100vh] flex items-center justify-center text-red-500 text-9xl'>
+				Error!
+			</div>
+		);
+	}
 	return (
 		<section>
 			<div className='container mx-auto px-5 min-h-[100vh]'>
@@ -154,7 +162,7 @@ const Comments = () => {
 						</>
 					) : (
 						date?.map(item => (
-							<li key={item.id} className='border-2 border-border-color p-3 rounded-2xl'>
+							<li key={item.id} className='border-2 border-border-color p-3 rounded-2xl box-shadow'>
 								<h3 className='text-2xl font-semibold'>Name: {item.name}</h3>
 								<p className='text-lg'>{item.body}</p>
 								<p className='mt-3 text-gray-900'>Email: {item.email}</p>
