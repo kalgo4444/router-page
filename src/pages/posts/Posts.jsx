@@ -22,160 +22,162 @@ const Posts = () => {
 		);
 	}
 	return (
-		<section>
-			<div className='container mx-auto px-5 min-h-[100vh]'>
-				<ul className='my-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5'>
-					{loading ? (
-						<>
-							<div className=' animate-pulse p-9'>
-								<h3 className='h-2 bg-gray-300 rounded-lg w-52 dark:bg-gray-600'></h3>
-								<p className='w-48 h-2 mt-6 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-								<p className='w-full h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-								<p className='w-64 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-								<p className='w-4/5 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-							</div>
-							<div className=' animate-pulse p-9'>
-								<h3 className='h-2 bg-gray-300 rounded-lg w-52 dark:bg-gray-600'></h3>
-								<p className='w-48 h-2 mt-6 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-								<p className='w-full h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-								<p className='w-64 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-								<p className='w-4/5 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-							</div>
-							<div className=' animate-pulse p-9'>
-								<h3 className='h-2 bg-gray-300 rounded-lg w-52 dark:bg-gray-600'></h3>
-								<p className='w-48 h-2 mt-6 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-								<p className='w-full h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-								<p className='w-64 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-								<p className='w-4/5 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-							</div>
-							<div className=' animate-pulse p-9'>
-								<h3 className='h-2 bg-gray-300 rounded-lg w-52 dark:bg-gray-600'></h3>
-								<p className='w-48 h-2 mt-6 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-								<p className='w-full h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-								<p className='w-64 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-								<p className='w-4/5 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-							</div>
-							<div className=' animate-pulse p-9'>
-								<h3 className='h-2 bg-gray-300 rounded-lg w-52 dark:bg-gray-600'></h3>
-								<p className='w-48 h-2 mt-6 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-								<p className='w-full h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-								<p className='w-64 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-								<p className='w-4/5 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-							</div>
-							<div className=' animate-pulse p-9'>
-								<h3 className='h-2 bg-gray-300 rounded-lg w-52 dark:bg-gray-600'></h3>
-								<p className='w-48 h-2 mt-6 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-								<p className='w-full h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-								<p className='w-64 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-								<p className='w-4/5 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-							</div>
-							<div className=' animate-pulse p-9'>
-								<h3 className='h-2 bg-gray-300 rounded-lg w-52 dark:bg-gray-600'></h3>
-								<p className='w-48 h-2 mt-6 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-								<p className='w-full h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-								<p className='w-64 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-								<p className='w-4/5 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-							</div>
-							<div className=' animate-pulse p-9'>
-								<h3 className='h-2 bg-gray-300 rounded-lg w-52 dark:bg-gray-600'></h3>
-								<p className='w-48 h-2 mt-6 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-								<p className='w-full h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-								<p className='w-64 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-								<p className='w-4/5 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-							</div>
-							<div className=' animate-pulse p-9'>
-								<h3 className='h-2 bg-gray-300 rounded-lg w-52 dark:bg-gray-600'></h3>
-								<p className='w-48 h-2 mt-6 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-								<p className='w-full h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-								<p className='w-64 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-								<p className='w-4/5 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-							</div>
-							<div className=' animate-pulse p-9'>
-								<h3 className='h-2 bg-gray-300 rounded-lg w-52 dark:bg-gray-600'></h3>
-								<p className='w-48 h-2 mt-6 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-								<p className='w-full h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-								<p className='w-64 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-								<p className='w-4/5 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-							</div>
-							<div className=' animate-pulse p-9'>
-								<h3 className='h-2 bg-gray-300 rounded-lg w-52 dark:bg-gray-600'></h3>
-								<p className='w-48 h-2 mt-6 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-								<p className='w-full h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-								<p className='w-64 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-								<p className='w-4/5 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-							</div>
-							<div className=' animate-pulse p-9'>
-								<h3 className='h-2 bg-gray-300 rounded-lg w-52 dark:bg-gray-600'></h3>
-								<p className='w-48 h-2 mt-6 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-								<p className='w-full h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-								<p className='w-64 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-								<p className='w-4/5 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-							</div>
-							<div className=' animate-pulse p-9'>
-								<h3 className='h-2 bg-gray-300 rounded-lg w-52 dark:bg-gray-600'></h3>
-								<p className='w-48 h-2 mt-6 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-								<p className='w-full h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-								<p className='w-64 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-								<p className='w-4/5 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-							</div>
-							<div className=' animate-pulse p-9'>
-								<h3 className='h-2 bg-gray-300 rounded-lg w-52 dark:bg-gray-600'></h3>
-								<p className='w-48 h-2 mt-6 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-								<p className='w-full h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-								<p className='w-64 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-								<p className='w-4/5 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-							</div>
-							<div className=' animate-pulse p-9'>
-								<h3 className='h-2 bg-gray-300 rounded-lg w-52 dark:bg-gray-600'></h3>
-								<p className='w-48 h-2 mt-6 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-								<p className='w-full h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-								<p className='w-64 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-								<p className='w-4/5 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-							</div>
-							<div className=' animate-pulse p-9'>
-								<h3 className='h-2 bg-gray-300 rounded-lg w-52 dark:bg-gray-600'></h3>
-								<p className='w-48 h-2 mt-6 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-								<p className='w-full h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-								<p className='w-64 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-								<p className='w-4/5 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-							</div>
-							<div className=' animate-pulse p-9'>
-								<h3 className='h-2 bg-gray-300 rounded-lg w-52 dark:bg-gray-600'></h3>
-								<p className='w-48 h-2 mt-6 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-								<p className='w-full h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-								<p className='w-64 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-								<p className='w-4/5 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-							</div>
-							<div className=' animate-pulse p-9'>
-								<h3 className='h-2 bg-gray-300 rounded-lg w-52 dark:bg-gray-600'></h3>
-								<p className='w-48 h-2 mt-6 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-								<p className='w-full h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-								<p className='w-64 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-								<p className='w-4/5 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-							</div>
-							<div className=' animate-pulse p-9'>
-								<h3 className='h-2 bg-gray-300 rounded-lg w-52 dark:bg-gray-600'></h3>
-								<p className='w-48 h-2 mt-6 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-								<p className='w-full h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-								<p className='w-64 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-								<p className='w-4/5 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-							</div>
-						</>
-					) : (
-						date?.map(item => (
-							<li
-								key={item.id}
-								className='bg-white text-black border-2 border-border-color p-3 rounded-2xl box-shadow'
-							>
-								<h3 className='text-3xl font-semibold'>Post</h3>
-								<p className='text-lg font-bold mt-3'>Title: {item.title}</p>
-								<p className='text-lg mt-1'>{item.body}</p>
-							</li>
-						))
-					)}
-				</ul>
-			</div>
-		</section>
+		<>
+			<section>
+				<div className='container mx-auto px-5 min-h-[100vh]'>
+					<ul className='my-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5'>
+						{loading ? (
+							<>
+								<div className=' animate-pulse p-9'>
+									<h3 className='h-2 bg-gray-300 rounded-lg w-52 dark:bg-gray-600'></h3>
+									<p className='w-48 h-2 mt-6 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+									<p className='w-full h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+									<p className='w-64 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+									<p className='w-4/5 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+								</div>
+								<div className=' animate-pulse p-9'>
+									<h3 className='h-2 bg-gray-300 rounded-lg w-52 dark:bg-gray-600'></h3>
+									<p className='w-48 h-2 mt-6 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+									<p className='w-full h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+									<p className='w-64 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+									<p className='w-4/5 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+								</div>
+								<div className=' animate-pulse p-9'>
+									<h3 className='h-2 bg-gray-300 rounded-lg w-52 dark:bg-gray-600'></h3>
+									<p className='w-48 h-2 mt-6 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+									<p className='w-full h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+									<p className='w-64 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+									<p className='w-4/5 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+								</div>
+								<div className=' animate-pulse p-9'>
+									<h3 className='h-2 bg-gray-300 rounded-lg w-52 dark:bg-gray-600'></h3>
+									<p className='w-48 h-2 mt-6 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+									<p className='w-full h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+									<p className='w-64 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+									<p className='w-4/5 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+								</div>
+								<div className=' animate-pulse p-9'>
+									<h3 className='h-2 bg-gray-300 rounded-lg w-52 dark:bg-gray-600'></h3>
+									<p className='w-48 h-2 mt-6 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+									<p className='w-full h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+									<p className='w-64 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+									<p className='w-4/5 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+								</div>
+								<div className=' animate-pulse p-9'>
+									<h3 className='h-2 bg-gray-300 rounded-lg w-52 dark:bg-gray-600'></h3>
+									<p className='w-48 h-2 mt-6 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+									<p className='w-full h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+									<p className='w-64 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+									<p className='w-4/5 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+								</div>
+								<div className=' animate-pulse p-9'>
+									<h3 className='h-2 bg-gray-300 rounded-lg w-52 dark:bg-gray-600'></h3>
+									<p className='w-48 h-2 mt-6 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+									<p className='w-full h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+									<p className='w-64 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+									<p className='w-4/5 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+								</div>
+								<div className=' animate-pulse p-9'>
+									<h3 className='h-2 bg-gray-300 rounded-lg w-52 dark:bg-gray-600'></h3>
+									<p className='w-48 h-2 mt-6 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+									<p className='w-full h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+									<p className='w-64 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+									<p className='w-4/5 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+								</div>
+								<div className=' animate-pulse p-9'>
+									<h3 className='h-2 bg-gray-300 rounded-lg w-52 dark:bg-gray-600'></h3>
+									<p className='w-48 h-2 mt-6 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+									<p className='w-full h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+									<p className='w-64 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+									<p className='w-4/5 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+								</div>
+								<div className=' animate-pulse p-9'>
+									<h3 className='h-2 bg-gray-300 rounded-lg w-52 dark:bg-gray-600'></h3>
+									<p className='w-48 h-2 mt-6 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+									<p className='w-full h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+									<p className='w-64 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+									<p className='w-4/5 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+								</div>
+								<div className=' animate-pulse p-9'>
+									<h3 className='h-2 bg-gray-300 rounded-lg w-52 dark:bg-gray-600'></h3>
+									<p className='w-48 h-2 mt-6 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+									<p className='w-full h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+									<p className='w-64 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+									<p className='w-4/5 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+								</div>
+								<div className=' animate-pulse p-9'>
+									<h3 className='h-2 bg-gray-300 rounded-lg w-52 dark:bg-gray-600'></h3>
+									<p className='w-48 h-2 mt-6 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+									<p className='w-full h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+									<p className='w-64 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+									<p className='w-4/5 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+								</div>
+								<div className=' animate-pulse p-9'>
+									<h3 className='h-2 bg-gray-300 rounded-lg w-52 dark:bg-gray-600'></h3>
+									<p className='w-48 h-2 mt-6 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+									<p className='w-full h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+									<p className='w-64 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+									<p className='w-4/5 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+								</div>
+								<div className=' animate-pulse p-9'>
+									<h3 className='h-2 bg-gray-300 rounded-lg w-52 dark:bg-gray-600'></h3>
+									<p className='w-48 h-2 mt-6 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+									<p className='w-full h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+									<p className='w-64 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+									<p className='w-4/5 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+								</div>
+								<div className=' animate-pulse p-9'>
+									<h3 className='h-2 bg-gray-300 rounded-lg w-52 dark:bg-gray-600'></h3>
+									<p className='w-48 h-2 mt-6 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+									<p className='w-full h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+									<p className='w-64 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+									<p className='w-4/5 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+								</div>
+								<div className=' animate-pulse p-9'>
+									<h3 className='h-2 bg-gray-300 rounded-lg w-52 dark:bg-gray-600'></h3>
+									<p className='w-48 h-2 mt-6 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+									<p className='w-full h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+									<p className='w-64 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+									<p className='w-4/5 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+								</div>
+								<div className=' animate-pulse p-9'>
+									<h3 className='h-2 bg-gray-300 rounded-lg w-52 dark:bg-gray-600'></h3>
+									<p className='w-48 h-2 mt-6 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+									<p className='w-full h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+									<p className='w-64 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+									<p className='w-4/5 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+								</div>
+								<div className=' animate-pulse p-9'>
+									<h3 className='h-2 bg-gray-300 rounded-lg w-52 dark:bg-gray-600'></h3>
+									<p className='w-48 h-2 mt-6 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+									<p className='w-full h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+									<p className='w-64 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+									<p className='w-4/5 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+								</div>
+								<div className=' animate-pulse p-9'>
+									<h3 className='h-2 bg-gray-300 rounded-lg w-52 dark:bg-gray-600'></h3>
+									<p className='w-48 h-2 mt-6 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+									<p className='w-full h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+									<p className='w-64 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+									<p className='w-4/5 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+								</div>
+							</>
+						) : (
+							date?.map(item => (
+								<li
+									key={item.id}
+									className='bg-white text-black border-2 border-border-color p-3 rounded-2xl box-shadow'
+								>
+									<h3 className='text-3xl font-semibold'>Post</h3>
+									<p className='text-lg font-bold mt-3'>Title: {item.title}</p>
+									<p className='text-lg mt-1'>{item.body}</p>
+								</li>
+							))
+						)}
+					</ul>
+				</div>
+			</section>
+		</>
 	);
 };
 

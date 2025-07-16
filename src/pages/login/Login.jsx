@@ -9,6 +9,7 @@ const Login = () => {
 
 	return (
 		<>
+			<title>Log in</title>
 			<section className='bg-white dark:bg-gray-900'>
 				<div className='container flex items-center justify-center min-h-screen px-6 mx-auto'>
 					<form onSubmit={handleSubmit} className='w-full max-w-md'>

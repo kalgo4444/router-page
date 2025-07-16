@@ -6,3 +6,6 @@
 .box-shadow {
 	box-shadow: 0 0 10px #00000028;
 }
+.box-shadow:hover {
+	box-shadow: 0 0 10px #00000048;
+}

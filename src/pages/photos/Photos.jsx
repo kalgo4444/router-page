@@ -21,99 +21,101 @@ const Photos = () => {
 		);
 	}
 	return (
-		<section>
-			<div className='container mx-auto px-5 min-h-[100vh]'>
-				<ul className='my-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6'>
-					{loading ? (
-						<>
-							<div className='animate-pulse'>
-								<div className='w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600'></div>
-								<h1 className='w-56 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></h1>
-								<p className='w-24 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-							</div>
-							<div className='animate-pulse'>
-								<div className='w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600'></div>
-								<h1 className='w-56 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></h1>
-								<p className='w-24 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-							</div>
-							<div className='animate-pulse'>
-								<div className='w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600'></div>
-								<h1 className='w-56 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></h1>
-								<p className='w-24 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-							</div>
-							<div className='animate-pulse'>
-								<div className='w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600'></div>
-								<h1 className='w-56 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></h1>
-								<p className='w-24 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-							</div>
-							<div className='animate-pulse'>
-								<div className='w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600'></div>
-								<h1 className='w-56 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></h1>
-								<p className='w-24 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-							</div>
-							<div className='animate-pulse'>
-								<div className='w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600'></div>
-								<h1 className='w-56 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></h1>
-								<p className='w-24 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-							</div>
-							<div className='animate-pulse'>
-								<div className='w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600'></div>
-								<h1 className='w-56 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></h1>
-								<p className='w-24 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-							</div>
-							<div className='animate-pulse'>
-								<div className='w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600'></div>
-								<h1 className='w-56 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></h1>
-								<p className='w-24 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-							</div>
-							<div className='animate-pulse'>
-								<div className='w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600'></div>
-								<h1 className='w-56 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></h1>
-								<p className='w-24 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-							</div>
-							<div className='animate-pulse'>
-								<div className='w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600'></div>
-								<h1 className='w-56 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></h1>
-								<p className='w-24 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-							</div>
-							<div className='animate-pulse'>
-								<div className='w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600'></div>
-								<h1 className='w-56 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></h1>
-								<p className='w-24 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-							</div>
-							<div className='animate-pulse'>
-								<div className='w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600'></div>
-								<h1 className='w-56 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></h1>
-								<p className='w-24 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-							</div>
-							<div className='animate-pulse'>
-								<div className='w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600'></div>
-								<h1 className='w-56 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></h1>
-								<p className='w-24 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-							</div>
-							<div className='animate-pulse'>
-								<div className='w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600'></div>
-								<h1 className='w-56 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></h1>
-								<p className='w-24 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-							</div>
-							<div className='animate-pulse'>
-								<div className='w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600'></div>
-								<h1 className='w-56 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></h1>
-								<p className='w-24 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
-							</div>
-						</>
-					) : (
-						date?.map(item => (
-							<li key={item.id} className='border border-border-color rounded-2xl box-shadow'>
-								<div className='w-full h-64 animate-pulse bg-gray-300 rounded-lg dark:bg-gray-600' />
-								<h3 className='mt-2 p-2 text-2xl font-semibold'>Image</h3>
-								<p className='p-2 text-lg'>{item.title}</p>
-							</li>
-						))
-					)}
-				</ul>
-			</div>
-		</section>
+		<>
+			<section>
+				<div className='container mx-auto px-5 min-h-[100vh]'>
+					<ul className='my-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6'>
+						{loading ? (
+							<>
+								<div className='animate-pulse'>
+									<div className='w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600'></div>
+									<h1 className='w-56 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></h1>
+									<p className='w-24 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+								</div>
+								<div className='animate-pulse'>
+									<div className='w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600'></div>
+									<h1 className='w-56 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></h1>
+									<p className='w-24 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+								</div>
+								<div className='animate-pulse'>
+									<div className='w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600'></div>
+									<h1 className='w-56 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></h1>
+									<p className='w-24 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+								</div>
+								<div className='animate-pulse'>
+									<div className='w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600'></div>
+									<h1 className='w-56 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></h1>
+									<p className='w-24 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+								</div>
+								<div className='animate-pulse'>
+									<div className='w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600'></div>
+									<h1 className='w-56 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></h1>
+									<p className='w-24 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+								</div>
+								<div className='animate-pulse'>
+									<div className='w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600'></div>
+									<h1 className='w-56 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></h1>
+									<p className='w-24 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+								</div>
+								<div className='animate-pulse'>
+									<div className='w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600'></div>
+									<h1 className='w-56 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></h1>
+									<p className='w-24 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+								</div>
+								<div className='animate-pulse'>
+									<div className='w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600'></div>
+									<h1 className='w-56 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></h1>
+									<p className='w-24 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+								</div>
+								<div className='animate-pulse'>
+									<div className='w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600'></div>
+									<h1 className='w-56 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></h1>
+									<p className='w-24 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+								</div>
+								<div className='animate-pulse'>
+									<div className='w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600'></div>
+									<h1 className='w-56 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></h1>
+									<p className='w-24 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+								</div>
+								<div className='animate-pulse'>
+									<div className='w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600'></div>
+									<h1 className='w-56 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></h1>
+									<p className='w-24 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+								</div>
+								<div className='animate-pulse'>
+									<div className='w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600'></div>
+									<h1 className='w-56 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></h1>
+									<p className='w-24 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+								</div>
+								<div className='animate-pulse'>
+									<div className='w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600'></div>
+									<h1 className='w-56 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></h1>
+									<p className='w-24 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+								</div>
+								<div className='animate-pulse'>
+									<div className='w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600'></div>
+									<h1 className='w-56 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></h1>
+									<p className='w-24 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+								</div>
+								<div className='animate-pulse'>
+									<div className='w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600'></div>
+									<h1 className='w-56 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></h1>
+									<p className='w-24 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700'></p>
+								</div>
+							</>
+						) : (
+							date?.map(item => (
+								<li key={item.id} className='border border-border-color rounded-2xl box-shadow'>
+									<div className='w-full h-64 animate-pulse bg-gray-300 rounded-lg dark:bg-gray-600' />
+									<h3 className='mt-2 p-2 text-2xl font-semibold'>Image</h3>
+									<p className='p-2 text-lg'>{item.title}</p>
+								</li>
+							))
+						)}
+					</ul>
+				</div>
+			</section>
+		</>
 	);
 };
 
