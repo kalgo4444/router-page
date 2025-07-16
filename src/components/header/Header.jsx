@@ -4,7 +4,7 @@ import Button from "../button/Button";
 
 const Header = () => {
 	return (
-		<header className='h-20 w-full sticky top-0 left-0 bg-white shadow dark:bg-gray-800'>
+		<header className='h-20 w-full sticky top-0 left-0 bg-white shadow dark:bg-gray-800 z-50'>
 			<nav className='container mx-auto px-5 h-full flex items-center justify-center text-gray-600 capitalize dark:text-gray-300'>
 				<>
 					<ul className='flex items-center gap-10'>
