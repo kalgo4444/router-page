@@ -1,7 +1,12 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Posts = () => {
+	AOS.init({
+		duration: 300,
+	});
 	const [date, setDate] = useState(null);
 	const [err, setErr] = useState(null);
 	const [loading, setLoading] = useState(true);
@@ -13,6 +18,8 @@ const Posts = () => {
 			.catch(err => setErr(err))
 			.finally(() => setLoading(false));
 	}, []);
+
+	const obj = date?.slice(0, 30);
 
 	if (err) {
 		return (
@@ -163,8 +170,9 @@ const Posts = () => {
 								</div>
 							</>
 						) : (
-							date?.map(item => (
+							obj?.map(item => (
 								<li
+									data-aos='fade-up'
 									key={item.id}
 									className='bg-white text-black border-2 border-border-color p-3 rounded-2xl box-shadow'
 								>

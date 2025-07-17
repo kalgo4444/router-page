@@ -1,7 +1,12 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Todos = () => {
+	AOS.init({
+		duration: 300,
+	});
 	const [date, setDate] = useState(null);
 	const [err, setErr] = useState(null);
 	const [loading, setLoading] = useState(true);
@@ -12,6 +17,8 @@ const Todos = () => {
 			.catch(err => setErr(err))
 			.finally(() => setLoading(false));
 	}, []);
+
+	const obj = date?.slice(0, 28);
 
 	if (err) {
 		return (
@@ -261,8 +268,9 @@ const Todos = () => {
 								</div>
 							</>
 						) : (
-							date?.map(item => (
+							obj?.map(item => (
 								<li
+									data-aos='fade-up'
 									key={item.id}
 									className={`border-2 border-border-color rounded-2xl p-3 min-h-[150px] relative box-shadow ${
 										item.completed ? "bg-gray-400" : "bg-white"

@@ -1,7 +1,12 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Photos = () => {
+	AOS.init({
+		duration: 300,
+	});
 	const [date, setDate] = useState(null);
 	const [err, setErr] = useState(null);
 	const [loading, setLoading] = useState(true);
@@ -12,6 +17,8 @@ const Photos = () => {
 			.catch(err => setErr(err))
 			.finally(() => setLoading(false));
 	}, []);
+
+	const obj = date?.slice(0, 16);
 
 	if (err) {
 		return (
@@ -104,9 +111,13 @@ const Photos = () => {
 								</div>
 							</>
 						) : (
-							date?.map(item => (
-								<li key={item.id} className='border border-border-color rounded-2xl box-shadow'>
-									<div className='w-full h-64 animate-pulse bg-gray-300 rounded-lg dark:bg-gray-600' />
+							obj?.map(item => (
+								<li
+									data-aos='fade-up'
+									key={item.id}
+									className='border border-border-color rounded-2xl box-shadow'
+								>
+									<img src={item.thumbnailUrl} className='w-full h-64' alt='Card image' />
 									<h3 className='mt-2 p-2 text-2xl font-semibold'>Image</h3>
 									<p className='p-2 text-lg'>{item.title}</p>
 								</li>

@@ -1,7 +1,12 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Comments = () => {
+	AOS.init({
+		duration: 300,
+	});
 	const [date, setDate] = useState(null);
 	const [err, setErr] = useState(null);
 	const [loading, setLoading] = useState(true);
@@ -12,6 +17,8 @@ const Comments = () => {
 			.catch(err => setErr(err))
 			.finally(() => setLoading(false));
 	}, []);
+
+	const obj = date?.slice(0, 28);
 
 	if (err) {
 		return (
@@ -162,8 +169,9 @@ const Comments = () => {
 								</div>
 							</>
 						) : (
-							date?.map(item => (
+							obj?.map(item => (
 								<li
+									data-aos='fade-up'
 									key={item.id}
 									className='border-2 border-border-color p-3 rounded-2xl box-shadow'
 								>

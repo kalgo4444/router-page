@@ -1,7 +1,12 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Users = () => {
+	AOS.init({
+		duration: 300,
+	});
 	const [date, setDate] = useState(null);
 	const [err, setErr] = useState(null);
 	const [loading, setLoading] = useState(true);
@@ -20,13 +25,14 @@ const Users = () => {
 			</div>
 		);
 	}
+
 	const img =
 		"https://images.unsplash.com/photo-1542156822-6924d1a71ace?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60";
 	return (
 		<>
 			<section>
 				<div className='container mx-auto px-5 min-h-[100vh]'>
-					<ul className='my-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6'>
+					<ul className='my-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 overflow-hidden'>
 						{loading ? (
 							<>
 								<div className='animate-pulse'>
@@ -118,6 +124,7 @@ const Users = () => {
 						) : (
 							date?.map(item => (
 								<li
+									data-aos='fade-up'
 									key={item.id}
 									className='overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800 box-shadow'
 								>
